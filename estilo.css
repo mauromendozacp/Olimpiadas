@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Bree+Serif|Righteous|Libre+Franklin|Wendy+One');
+
+html, body{
+	height: 100%;
+  	position: relative;
+}
+
+body{
+	margin: 0;
+	background-color: white;
+}
+
+ul{
+	margin: 0;
+ 	padding: 0;
+ 	list-style-type: none;
+}
+
+#pagina{
+	min-height: 100%;
+	position: relative;
+	display: block;
+}
+
+/*cabezaera*/
+
+#home{
+	min-height: 130px;
+	top: 0;
+}
+
+#main-nav{
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	height: 130px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+	box-shadow: 2px 1px 4px #666666 ;
+	background-color: #000;
+	position: fixed;
+}
+
+#contenedor{
+	width: 60%;
+	height: 110px;
+	margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+#logo-inicio{
+	float: left;
+	margin-top: 5px;
+}
+
+#nav{
+	float: right;
+}
+
+#botonera-nav{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.sec-boton{
+	display: inline-block;
+	margin-top: 15%;
+	margin-right: 25px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+.sec-boton a{
+	text-decoration: none;
+	font-family: 'Bree Serif', serif;
+	font-size: 25px;
+	vertical-align: baseline;
+	color: #fff;
+
+	transition-property: all;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+#botonera-nav ul li a:hover{
+	color: #00b8e6;
+}
+
+/*seccion contenido*/
+
+#sec-contenido{
+	width: 70%;
+	min-height: 100%;
+  	clear:both;
+  	z-index: 2;
+	margin: 15px 15%;
+	margin-top: 50px;
+	box-sizing: border-box;
+}
+
+#contenido{
+	text-align: center;
+}
+
+#cont-titulo{
+	margin-top: 0px;
+	margin-bottom: 25px;
+	padding-top: 45px;
+	font-size: 58px;
+	font-family: 'Libre Franklin', sans-serif;
+	color: #1ac6ff;
+}
+
+/*Contacto*/
+
+#formulario {
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	z-index: 1;
+}
+
+#row{
+	position: relative;
+	margin-left: -15px;
+    margin-right: -15px;
+    box-sizing: border-box;
+}
+
+#cont-colum1, #cont-colum2{
+	position: relative;
+	width: 50%;
+    min-height: 1px;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+#message-form{
+	float: left;
+	padding: 15px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#cont-colum1{
+	float: left;
+}
+
+#cont-colum2{
+	float: right;
+}
+
+.li-colum, #text{
+	display: block;
+    width: 100%;
+    height: 20px;
+    padding: 20px;
+    font-size: 12px;
+    line-height: 1;
+    color: #555555;
+    background-color: #ffffff;
+    background-image: none;
+    border-radius: 0;
+    margin-bottom: 15px;
+   	overflow: auto;
+   	box-sizing: border-box;
+}
+
+#text {
+	height: auto;
+    padding-bottom: 23px;
+}
+
+#submit {
+	background-color: #0099ff;
+	color: #ffffff;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 4px;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    white-space: nowrap;
+    padding: 8px 15px;
+    font-size: 18px;
+    line-height: 1;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Montserrat;
+    border: 1px solid transparent;
+    transition: all .7s;
+}
+
+/*contenid-equipo*/
+
+#cont-equipo {
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	display: inline-block;
+}
+
+.cont-sec, .cont-mid{
+	display: inline-block;
+	width: 33%;
+	margin-bottom: 55px;
+}
+
+#cont-left{
+	float: left;
+}
+
+#cont-right{
+	float: right;
+}
+
+.cont-img{
+	width: 220px;
+	height: 220px;
+	border-radius: 100%;
+}
+
+.nomb-cont{
+	color: #808080;
+	font-weight: bold;
+	font-family: 'Bree Serif', cursive;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.desc-cont{
+	margin: 10px 0;
+	font-family: 'Wendy One', sans-serif;
+	font-size: 18px;
+	color: #333333;
+}
+
+/*mensaje enviado*/
+
+#mensaje-enviado{
+	justify-content: center;
+	align-items: center;
+}
+
+/*programa*/
+
+#tabla {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fila-datos{
+	padding: 5px;
+	border: 1px solid #000;
+	width: 100px;
+}
+
+/*usuario*/
+
+
+#usuario-cuenta{
+	float: left;
+}
+
+#estado-cuenta{
+	float: right;
+}
+
+#cont-usuario{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#f-ing, #f-reg {
+	width: 300px;
+	height: 250px;
+	overflow: hidden;
+	margin-top: 45px;
+	display: inline-block;
+	padding: 0 35px 35px 35px;
+}
+
+#f-ing h3, #f-reg h3 {
+	text-align: center;
+	text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+}
+
+#f-ing {
+	border-right: 2px solid #000;
+}
+
+.f-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.f-list li {
+	height: 30px;
+	text-shadow: 1px 1px 2px white, 0 0 45px white, 0 0 5px white;
+}
+
+.f-list li span {
+	float: left;
+}
+
+.f-list li input {
+	float: right;
+}
+
+#sub-ing, #sub-reg {
+	margin-right: auto;
+	margin-left: auto;
+	float: none;
+}
+
+#sub-ing {
+	width: 65px;
+}
+
+#sub-reg {
+	width: 90px;
+}
+
+/*pie de la pagina*/
+
+#foot {
+	width: 100%;
+	padding-top: 30px;
+	height: 150px;
+	background-color: #000;
+  	align-items: center;
+  	position: absolute;
+	bottom: 0;
+	top: 100%;
+}
+
+#pie-info {
+	width: 70%;
+	height: 125px;
+	margin-right: auto;
+ 	margin-left: auto;
+}
+
+#pie-info ul {
+ 	display: flex;
+ }
+
+#pie-info ul li {
+
+ 	margin-right: auto;
+ 	margin-left: auto;
+ }
+
+ .img-icon{
+ 	display: flex;
+  	justify-content: center;
+ }
+
+#pie-info ul li img {
+ 	width: 100px;
+ 	height: 75px;
+ 	padding-bottom: 10px;
+ 	margin: 0 auto;
+ }
+
+ #pie-info ul li p {
+ 	font-family: Arial;
+ 	font-size: 18px;
+ 	font-weight: bold;
+ 	text-align: center;
+ 	margin: auto;
+ }
+
+  #pie-info ul li p span {
+ 	text-decoration: none;
+ 	color: #fff;
+ }

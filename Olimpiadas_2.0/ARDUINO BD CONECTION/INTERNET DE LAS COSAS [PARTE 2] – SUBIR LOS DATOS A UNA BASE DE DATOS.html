@@ -1,0 +1,2966 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>    INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS
+</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="    
+">
+    <meta name="csrf-token" content="bNerzC2vzSNt3GxkvBF7E147Hwil16F6chKqomxK">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="http://geekytheory.com/wp-content/uploads/2014/05/ar2.png">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="https://geekytheory.com/uploads/2017/05/logo%2032%20geeky%20theory.png">
+    <link rel="apple-touch-icon" href="https://geekytheory.com/uploads/2017/05/logo%2057%20geeky%20theory.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://geekytheory.com/uploads/2017/05/logo%2072%20geeky%20theory.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://geekytheory.com/uploads/2017/05/logo%20114%20geeky%20theory.png">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Plugins -->
+    <link href="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/font-awesome.min.css" rel="stylesheet">
+    <link href="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/ionicons.min.css" rel="stylesheet">
+    <link href="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/simpletextrotator.css" rel="stylesheet">
+    <link href="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/magnific-popup.css" rel="stylesheet">
+    <link href="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/owl.carousel.css" rel="stylesheet">
+    <link href="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/superslides.css" rel="stylesheet">
+    <link href="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/vertical.css" rel="stylesheet">
+    <link href="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/animate.css" rel="stylesheet">
+    <link href="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/custom.css" rel="stylesheet">
+
+    <link media="all" type="text/css" rel="stylesheet" href="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/photoswipe.css">
+
+    <link media="all" type="text/css" rel="stylesheet" href="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/default-skin.css">
+
+
+<link rel="stylesheet" type="text/css" href="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/cookieconsent.min.css">
+<script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/ca-pub-6739991881181660.js.descarga"></script><script async="" src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/analytics.js.descarga"></script><script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/cookieconsent.min.js.descarga"></script>
+<script>
+    window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#fff",
+                    "text": "#838391"
+                },
+                "button": {
+                    "background": "#2c3e50;"
+                }
+            },
+            "position": "bottom-right",
+            "content": {
+                "message": "Utilizamos cookies para asegurarnos de que tengas una mejor experiencia en Geeky Theory.",
+                "dismiss": "De acuerdo",
+                "link": "Saber más",
+                "href": "https://geekytheory.com/p/politica-de-cookies"
+            }
+        })});
+</script>
+<!-- Template core CSS -->
+    <link href="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/style.css" rel="stylesheet">
+            <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-34850740-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><style></style></head>
+<body><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-floating cc-type-info cc-theme-block cc-bottom cc-right cc-color-override--433640289 "><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">Utilizamos cookies para asegurarnos de que tengas una mejor experiencia en Geeky Theory. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://geekytheory.com/p/politica-de-cookies" target="_blank">Saber más</a></span><div class="cc-compliance"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">De acuerdo</a></div><!--googleon: all--></div>
+
+<!-- OVERLAY MENU -->
+<div id="overlay-menu" class="overlay-menu">
+    <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" id="overlay-menu-hide" class="navigation-hide"><i class="ion-close-round"></i></a>
+    <div class="overlay-menu-inner">
+        <nav class="overlay-menu-nav">
+            <ul id="nav">
+                                                                                                <li class="">
+                        <a href="https://geekytheory.com/" title="Inicio">Inicio</a>
+                                            </li>
+                                                                                                                                            <li class="slidedown">
+                        <a href="https://geekytheory.com/category/articulos" title="Artículos">Artículos</a>
+                                                    <ul>
+                                                                    <li>
+                                        <a href="https://geekytheory.com/category/aplicaciones" title="Aplicaciones">Aplicaciones</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://geekytheory.com/category/noticias" title="Noticias">Noticias</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://geekytheory.com/category/opinion-articulos" title="Opinión">Opinión</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://geekytheory.com/category/tecnologia" title="Tecnología">Tecnología</a>
+                                    </li>
+                                                            </ul>
+                                            </li>
+                                                                                                                                            <li class="slidedown">
+                        <a href="https://geekytheory.com/category/tutoriales" title="Tutoriales">Tutoriales</a>
+                                                    <ul>
+                                                                    <li>
+                                        <a href="https://geekytheory.com/category/raspberry-pi" title="Raspberry Pi">Raspberry Pi</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://geekytheory.com/category/tutoriales-arduino" title="Arduino">Arduino</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://geekytheory.com/category/linux" title="Linux">Linux</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://geekytheory.com/category/android" title="Android">Android</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://geekytheory.com/category/java" title="Java">Java</a>
+                                    </li>
+                                                            </ul>
+                                            </li>
+                            </ul>
+        </nav>
+    </div>
+    <div class="overlay-navigation-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <p class="copyright font-alt m-b-0">
+                        <!-- Copyright text -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /OVERLAY MENU -->
+
+<!-- WRAPPER -->
+<div class="wrapper">
+
+    <!-- NAVIGATION -->
+<nav class="navbar navbar-custom navbar-custom navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="https://geekytheory.com/">
+                <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/logo 32.png" class="navbar-logo" alt="">
+            </a>
+        </div>
+        <!-- ICONS NAVBAR -->
+        <ul id="icons-navbar" class="nav navbar-nav navbar-right visible-xs">
+            <li>
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" id="toggle-menu" class="show-overlay" title="Menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+            </li>
+        </ul>
+        <!-- /ICONS NAVBAR -->
+        <ul class="extra-navbar nav navbar-nav navbar-right clearfix-menu menu">
+                                            <li>
+                    <a href="https://geekytheory.com/" title="Inicio">
+                        Inicio
+                                            </a>
+                                    </li>
+                                            <li>
+                    <a href="https://geekytheory.com/category/articulos" title="Artículos">
+                        Artículos
+                                                    <i class="glyphicon glyphicon-chevron-down"></i>
+                                            </a>
+                                            <ul class="sub-menu">
+                                                            <li>
+                                    <a href="https://geekytheory.com/category/aplicaciones" title="Aplicaciones" class="color-darkblue">Aplicaciones</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://geekytheory.com/category/noticias" title="Noticias" class="color-darkblue">Noticias</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://geekytheory.com/category/opinion-articulos" title="Opinión" class="color-darkblue">Opinión</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://geekytheory.com/category/tecnologia" title="Tecnología" class="color-darkblue">Tecnología</a>
+                                </li>
+                                                    </ul>
+                                    </li>
+                                            <li>
+                    <a href="https://geekytheory.com/category/tutoriales" title="Tutoriales">
+                        Tutoriales
+                                                    <i class="glyphicon glyphicon-chevron-down"></i>
+                                            </a>
+                                            <ul class="sub-menu">
+                                                            <li>
+                                    <a href="https://geekytheory.com/category/raspberry-pi" title="Raspberry Pi" class="color-darkblue">Raspberry Pi</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://geekytheory.com/category/tutoriales-arduino" title="Arduino" class="color-darkblue">Arduino</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://geekytheory.com/category/linux" title="Linux" class="color-darkblue">Linux</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://geekytheory.com/category/android" title="Android" class="color-darkblue">Android</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://geekytheory.com/category/java" title="Java" class="color-darkblue">Java</a>
+                                </li>
+                                                    </ul>
+                                    </li>
+                    </ul>
+        
+    </div>
+</nav><!-- /NAVIGATION -->
+
+<!-- HERO -->
+<section class="module module-parallax bg-dark-80" style="background-image: url(&#39;http://geekytheory.com/wp-content/uploads/2014/05/ar2.png&#39;);">
+    <!-- HERO TEXT -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                                    <h1 class="mh-line-size-3 font-alt m-b-20">INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS</h1>
+                                                    <h5 class="mh-line-size-4 font-alt"></h5>
+                            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <div class="social-icon-links-container">
+        <ul class="social-icon-links socicon-round">
+                            <li>
+                                        <a href="whatsapp://send?text=INTERNET DE LAS COSAS [PARTE 2] %E2%80%93 SUBIR LOS DATOS A UNA BASE DE DATOS https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos" title="Enviar por WhatsApp" data-postid="347" data-socialnetwork="whatsapp" class="social-icon-link whatsapp visible-xs" target="_blank">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+                </li>
+                            <li>
+                                        <a href="https://twitter.com/intent/tweet?text=INTERNET%20DE%20LAS%20COSAS%20[PARTE%202]%20%E2%80%93%20SUBIR%20LOS%20DATOS%20A%20UNA%20BASE%20DE%20DATOS%20https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos" title="Compartir en Twitter" data-postid="347" data-socialnetwork="twitter" class="social-icon-link twitter " target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                            <li>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos" title="Compartir en Facebook" data-postid="347" data-socialnetwork="facebook" class="social-icon-link facebook " target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                            <li>
+                                        <a href="https://plus.google.com/share?url=https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos" title="Compartir en Google Plus" data-postid="347" data-socialnetwork="google-plus" class="social-icon-link google-plus " target="_blank">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+                            <li>
+                                        <a href="https://telegram.me/share/url?url=INTERNET%20DE%20LAS%20COSAS%20[PARTE%202]%20%E2%80%93%20SUBIR%20LOS%20DATOS%20A%20UNA%20BASE%20DE%20DATOS%20https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos" title="Enviar por Telegram" data-postid="347" data-socialnetwork="telegram" class="social-icon-link telegram " target="_blank">
+                        <i class="fa fa-send"></i>
+                    </a>
+                </li>
+                            <li>
+                                        <a href="mailto:?subject=INTERNET%20DE%20LAS%20COSAS%20[PARTE%202]%20%E2%80%93%20SUBIR%20LOS%20DATOS%20A%20UNA%20BASE%20DE%20DATOS&amp;body=https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos" title="Enviar por email" data-postid="347" data-socialnetwork="mail" class="social-icon-link mail " target="_blank">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+                    </ul>
+    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /HERO TEXT -->
+</section>
+<!-- /HERO -->
+    <section class="module">
+    <div class="container adsense-banner">
+                    <script async="" src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/adsbygoogle.js.descarga"></script>
+<!-- ad responsive theory -->
+<ins class="adsbygoogle" style="display: block; height: 60px;" data-ad-client="ca-pub-6739991881181660" data-ad-slot="1046345888" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:60px;margin:0;padding:0;position:relative;visibility:visible;width:720px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:60px;margin:0;padding:0;position:relative;visibility:visible;width:720px;background-color:transparent;"><iframe width="720" height="60" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:720px;height:60px;" src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/saved_resource.html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <article class="post post-single">
+    <div class="post-meta font-alt">
+                    Por
+            <a href="https://geekytheory.com/user/marioperezesteso">Mario Pérez Esteso</a>
+                            en
+                                                                                                                        <a href="https://geekytheory.com/category/tutoriales-arduino">Arduino</a>, <a href="https://geekytheory.com/category/tutoriales">Tutoriales</a>
+            </div>
+    <div class="post-header">
+        <h1 class="post-title font-alt">
+            INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS
+        </h1>
+    </div>
+    <div class="post-entry">
+        <p style="text-align: justify"><a href="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/ar2.png"><img class="alignnone size-full wp-image-10639" src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/ar2.png" alt="ar2" width="1024" height="640"></a>¡Hola! Seguimos con la serie de tutoriales del Internet de las Cosas (Internet of Things). Como ya comenté en el <a title="INTERNET DE LAS COSAS [PARTE 1] – LEER TEMPERATURA CON ARDUINO Y LM35" href="http://geekytheory.com/internet-de-las-cosas-parte-1-leer-temperatura-con-arduino-y-lm35/" target="_blank">tutorial anterior</a>, en estos artículos aprenderemos a leer datos de Arduino y a guardarlos en una base de datos para después graficarlos.</p>
+
+<p style="text-align: justify">Los tutoriales que forman parte de esta serie son:</p>
+
+<ol>
+    <li><a title="INTERNET DE LAS COSAS [PARTE 1] – LEER TEMPERATURA CON ARDUINO Y LM35" href="http://geekytheory.com/internet-de-las-cosas-parte-1-leer-temperatura-con-arduino-y-lm35/" target="_blank">Leer datos de Arduino: leeremos la temperatura de un <strong>sensor LM35</strong>.</a></li>
+    <li>Mandar estas lecturas a una <strong>base de datos</strong> que se encuentre en un servidor. Utilizaré mi <strong>Raspberry Pi</strong>.</li>
+    <li>Graficar estos datos con <strong>HighCharts</strong>.</li>
+</ol>
+
+<p style="text-align: justify">En esta segunda parte, crearemos la base de datos y subiremos los datos de los sensores a ella. En este caso sólo tengo un sensor de temperatura (LM35), así que será más sencillo que si tenemos muchos.</p>
+
+<p style="text-align: justify">El ecosistema de la aplicación que estamos realizando consta de <strong>dos partes principales</strong>: una es el cliente (Arduino) y otra el servidor, que estará <strong>programado en PHP</strong>. No es nada del otro mundo, pero si queréis darle un repaso, os aconsejo estos <a href="http://geekytheory.com/category/geeky-theory-2/tutoriales-2/programacion-web/php-mysql/" target="_blank">tutoriales de PHP</a>.</p>
+
+<h3>Paso 1: crear la base de datos</h3>
+
+<div class="alert" style="text-align: justify">Si no tenéis instalado <strong>LAMP</strong> en vuestra Raspberry Pi, os recomiendo que os paséis por este <a href="http://geekytheory.com/tutorial-raspberry-pi-15-instalacion-de-apache-mysql-php/" target="_blank">tutorial para instalar un servidor Web en Raspberry Pi</a>. Una vez tengáis eso hecho, podréis seguir con lo que viene ahora.</div>
+
+<p style="text-align: justify"><strong>Abrimos phpMyAdmin </strong>para crear la base de datos. Yo la voy a llamar "<strong>sensores</strong>":</p>
+
+<img class="aligncenter size-full wp-image-8545" src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/internet-de-las-cosas-arduino-ethernet-shield-mysql-php.png" alt="internet de las cosas arduino ethernet shield mysql php" width="550" height="140">
+
+<p style="text-align: justify">&nbsp;A continuación, creamos una tabla llamada "<strong>valores</strong>", la cual tendrá 3 columnas:</p>
+
+<img class="aligncenter size-full wp-image-8546" src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/internet-de-las-cosas-arduino-ethernet-shield-mysql-php-2.png" alt="internet de las cosas arduino ethernet shield mysql php 2" width="642" height="286">
+
+<p style="text-align: justify">Estas 3 columnas van a ser las siguientes:</p>
+
+<ul>
+    <li style="text-align: justify"><strong>ID</strong>: aquí se almacenará el identificador del registro. Será la clave primaria.</li>
+    <li style="text-align: justify"><strong>valor</strong>: en este campo se almacenará el valor de la lectura del sensor.</li>
+    <li style="text-align: justify"><strong>tiempo</strong>: este campo almacenará la hora en que se ha tomado la muestra.</li>
+</ul>
+
+&nbsp;
+
+<p style="text-align: justify"><img class="aligncenter size-full wp-image-8554" src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/internet-de-las-cosas-arduino-ethernet-shield-mysql-php-6.png" alt="internet de las cosas arduino ethernet shield mysql php 6" width="941" height="193"></p>
+
+<p style="text-align: justify">Como podéis observar en la captura de pantalla anterior, tenemos que el atributo tiempo va a ser de tipo <strong>TIMESTAMP</strong> y su valor predeterminado es <strong>CURRENT_TIMESTAMP</strong>. Esto significa que cada vez que insertemos una muestra en la base de datos, en el campo <strong>tiempo </strong>se almacenará la hora actual.</p>
+
+<p style="text-align: justify">Si queréis profundizar más en el tema de creación de bases de datos, os recomiendo que leáis <a href="http://geekytheory.com/java-php-mysql-ii-creacion-de-una-base-de-datos-en-mysql/" target="_blank">este tutorial</a>.</p>
+
+<h3 style="text-align: justify">Paso 2: programación del servidor</h3>
+
+<p style="text-align: justify">Una vez configurada la base de datos, procedemos a la programación del servidor. Puede ser una Raspberry Pi o incluso vuestro propio ordenador. También vale un servidor remoto.</p>
+
+<p style="text-align: justify">Voy a crear una carpeta dentro de mi servidor que se va a llamar <strong>tutoiot</strong> (tutorial Internet de las Cosas) y, dentro crearé dos archivos: <strong>config.php</strong> y <strong>iot.php</strong>. El archivo <strong>config.php </strong>contiene la información para establecer una conexión con la base de datos. El archivo <strong>iot.php </strong>se encarga de subir los datos recibidos a la base de datos de sensores. Los datos los vamos a pasar a través de GET.</p>
+
+<pre class="theme:github lang:php decode:true" title="config.php">&lt;?php
+    // config.php
+    // Credenciales
+    $dbhost = "localhost";
+    $dbuser = "user";
+    $dbpass = "pass";
+    $dbname = "sensores";
+    // Conexión con la base de datos
+    $con = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+?&gt;</pre>
+
+<pre class="theme:github lang:php decode:true" title="iot.php">&lt;?php
+    // iot.php
+    // Importamos la configuración
+    require("config.php");
+    // Leemos los valores que nos llegan por GET
+    $valor = mysqli_real_escape_string($con, $_GET['valor']);
+    // Esta es la instrucción para insertar los valores
+    $query = "INSERT INTO valores(valor) VALUES('".$valor."')";
+    // Ejecutamos la instrucción
+    mysqli_query($con, $query);
+    mysqli_close($con);
+?&gt;</pre>
+
+Para probar si funciona, simplemente vamos a abrir el navegador e insertar una muestra en la base de datos. Los métodos GET no es que sean demasiado seguros, pero como esto es un proyecto "de una tarde", tampoco vamos a complicarnos demasiado la vida.
+
+La IP de mi servidor es la <strong>192.168.1.6</strong>, así que en el navegador introduzco lo siguiente:
+
+<p style="text-align: center"><span style="color: #3366ff">192.168.1.6/tutoiot/iot.php?valor=22.55</span></p>
+
+Esto quiere decir que estoy metiendo en la base de datos un valor de 22.55, que representa la temperatura leída por Arduino.
+
+<h3>Paso 3: programación de Arduino</h3>
+
+<p style="text-align: justify">Una vez configurada la base de datos, tenemos que programar el Arduino. Como lo conectaremos, en este caso, a un servidor remoto, ya sea la Raspberry Pi o cualquier ordenador, tendremos que introducir algunas variables extra para conseguir la conexión.</p>
+
+<p style="text-align: justify">Si recordáis el <a href="http://geekytheory.com/internet-de-las-cosas-parte-1-leer-temperatura-con-arduino-y-lm35/" target="_blank">primer tutorial</a>, el código era muy simple. Únicamente leíamos el valor del sensor y lo mostrábamos con el monitor serial. <strong>No teníamos en cuenta la parte de Ethernet Shield, cosa que sí haremos ahora</strong>.</p>
+
+<pre class="theme:arduino-ide lang:arduino decode:true">#include &lt;Ethernet.h&gt;
+#include &lt;SPI.h&gt;
+
+// Configuracion del Ethernet Shield
+byte mac[] = {0xDE, 0xAD, 0xBE, 0xEF, 0xFF, 0xEE}; // Direccion MAC
+byte ip[] = { 192,168,1,100 }; // Direccion IP del Arduino
+byte server[] = { 192,168,1,6 }; // Direccion IP del servidor
+EthernetClient client; 
+float temperatura;
+int analog_pin = 0;
+
+void setup(void) {
+  Ethernet.begin(mac, ip); // Inicializamos el Ethernet Shield
+  delay(1000); // Esperamos 1 segundo de cortesia
+}
+
+void loop(void) {
+  temperatura = analogRead(analog_pin);
+  temperatura = 5.0*temperatura*100.0/1024.0;
+  //Display in Serial Monitor
+  Serial.print(temperatura); //Return temperature to Monitor
+  Serial.println(" oC");
+  // Proceso de envio de muestras al servidor
+  Serial.println("Connecting...");
+  if (client.connect(server, 80)&gt;0) {  // Conexion con el servidor
+    client.print("GET /tutoiot/iot.php?valor="); // Enviamos los datos por GET
+    client.print(temperatura);
+    client.println(" HTTP/1.0");
+    client.println("User-Agent: Arduino 1.0");
+    client.println();
+    Serial.println("Conectado");
+  } else {
+    Serial.println("Fallo en la conexion");
+  }
+  if (!client.connected()) {
+    Serial.println("Disconnected!");
+  }
+  client.stop();
+  client.flush();
+  delay(60000); // Espero un minuto antes de tomar otra muestra
+}</pre>
+
+<p style="text-align: justify">Una vez hecho esto, <strong>conectamos el Ethernet Shield a nuestro router y comenzará a mandar los datos al servidor</strong>, tal y como se ve en la siguiente imagen:</p>
+
+<p style="text-align: justify"><img class="aligncenter size-full wp-image-8549" src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/internet-de-las-cosas-arduino-ethernet-shield-mysql-php-5.png" alt="internet de las cosas arduino ethernet shield mysql php 5" width="691" height="394"></p>
+
+<p style="text-align: justify">Esto es todo por este tutorial. Espero que os haya servido y, si tenéis alguna duda, dejad un comentario. ¡Saludos!</p>
+    </div>
+</article>
+<div class="tags">
+            <a href="https://geekytheory.com/tag/arduino">arduino</a>            <a href="https://geekytheory.com/tag/ethernet-shield">ethernet shield</a>            <a href="https://geekytheory.com/tag/lamp">lamp</a>            <a href="https://geekytheory.com/tag/raspberry-pi-2">raspberry pi</a>            <a href="https://geekytheory.com/tag/servidor">servidor</a>            <a href="https://geekytheory.com/tag/temperatura">temperatura</a>            <a href="https://geekytheory.com/tag/internet-de-las-cosas">internet de las cosas</a>            <a href="https://geekytheory.com/tag/sensor">sensor</a>    </div>
+<div class="row">
+    <div class="col-sm-12 text-center">
+        <div class="social-icon-links-container">
+        <ul class="social-icon-links socicon-round">
+                            <li>
+                                        <a href="whatsapp://send?text=INTERNET DE LAS COSAS [PARTE 2] %E2%80%93 SUBIR LOS DATOS A UNA BASE DE DATOS https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos" title="Enviar por WhatsApp" data-postid="347" data-socialnetwork="whatsapp" class="social-icon-link whatsapp visible-xs" target="_blank">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+                </li>
+                            <li>
+                                        <a href="https://twitter.com/intent/tweet?text=INTERNET%20DE%20LAS%20COSAS%20[PARTE%202]%20%E2%80%93%20SUBIR%20LOS%20DATOS%20A%20UNA%20BASE%20DE%20DATOS%20https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos" title="Compartir en Twitter" data-postid="347" data-socialnetwork="twitter" class="social-icon-link twitter " target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                            <li>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos" title="Compartir en Facebook" data-postid="347" data-socialnetwork="facebook" class="social-icon-link facebook " target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                            <li>
+                                        <a href="https://plus.google.com/share?url=https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos" title="Compartir en Google Plus" data-postid="347" data-socialnetwork="google-plus" class="social-icon-link google-plus " target="_blank">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+                            <li>
+                                        <a href="https://telegram.me/share/url?url=INTERNET%20DE%20LAS%20COSAS%20[PARTE%202]%20%E2%80%93%20SUBIR%20LOS%20DATOS%20A%20UNA%20BASE%20DE%20DATOS%20https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos" title="Enviar por Telegram" data-postid="347" data-socialnetwork="telegram" class="social-icon-link telegram " target="_blank">
+                        <i class="fa fa-send"></i>
+                    </a>
+                </li>
+                            <li>
+                                        <a href="mailto:?subject=INTERNET%20DE%20LAS%20COSAS%20[PARTE%202]%20%E2%80%93%20SUBIR%20LOS%20DATOS%20A%20UNA%20BASE%20DE%20DATOS&amp;body=https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos" title="Enviar por email" data-postid="347" data-socialnetwork="mail" class="social-icon-link mail " target="_blank">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+                    </ul>
+    </div>
+    </div>
+</div>
+<div>
+            <script async="" src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/adsbygoogle.js.descarga"></script>
+<!-- ad responsive theory -->
+<ins class="adsbygoogle" style="display: block; height: 60px;" data-ad-client="ca-pub-6739991881181660" data-ad-slot="1046345888" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:60px;margin:0;padding:0;position:relative;visibility:visible;width:595px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:60px;margin:0;padding:0;position:relative;visibility:visible;width:595px;background-color:transparent;"><iframe width="595" height="60" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:595px;height:60px;" src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/saved_resource(1).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </div>
+                                    <div class="post-author">
+    <h4 class="post-author-title font-alt">Autor</h4>
+    <hr class="divider m-b-30">
+    <div class="author-bio">
+        <div class="author-avatar">
+            <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/4a6f506a1fc112ebbbaa3f26b19f175a" alt="">
+        </div>
+        <div class="author-content">
+            <h5 class="author-name font-alt">Mario Pérez Esteso</h5>
+                            <p>Ingeniero de Telecomunicación especializado en telemática. Desarrollador cloud apasionado de la programación y del conocimiento libre. Fundador de Geeky Theory.</p>
+                <ul class="social-icon-links socicon-round">
+                                                                        <li>
+                                                                                                <a href="http://twitter.com/marioperest" target="_blank"><i class="fa fa-twitter"></i></a>
+                            </li>
+                                                                                                <li>
+                                                                                                <a href="https://instagram.com/geekytheory" target="_blank"><i class="fa fa-instagram"></i></a>
+                            </li>
+                                                                                                <li>
+                                                                                                <a href="https://facebook.com/geekytheory" target="_blank"><i class="fa fa-facebook"></i></a>
+                            </li>
+                                                                                                <li>
+                                                                                                <a href="https://github.com/marioperezesteso" target="_blank"><i class="fa fa-github"></i></a>
+                            </li>
+                                                                                                                                            <li>
+                                                                                                                                                                    <a href="https://plus.google.com/u/0/105420449293289565478/posts" target="_blank"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                                                                                                                                                                                        <li>
+                                                                                                <a href="http://es.linkedin.com/in/marioperezesteso/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                                                                                                                                                                                                </ul>
+                    </div>
+    </div>
+</div>                            </div>
+        </div>
+                    <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <!-- COMMENT FORM -->
+<div class="comment-form">
+    <h4 class="comment-form-title font-alt">Deja un comentario</h4>
+    <hr class="divider m-b-30">
+    <div class="alert alert-success comment-success-alert" style="display: none;">
+        <i class="icon fa fa-check"></i>
+        <span class="comment-success-message">Su comentario se ha enviado con éxito.</span>
+    </div>
+    <div class="alert alert-danger comment-error-alert" style="display: none;">
+        <i class="icon fa fa-warning"></i>
+        <span class="comment-error-message">Ha ocurrido un error al enviar su comentario. Por favor, inténtelo de nuevo.</span>
+    </div>
+    <div class="alert alert-warning comment-spam-alert" style="display: none;">
+        <i class="icon fa fa-info"></i>
+        <span class="comment-spam-message">Su comentario está pendiente de moderación.</span>
+    </div>
+    <div class="row">
+        <form method="POST" action="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos" accept-charset="UTF-8" class="form form-new-comment" data-postid="347" data-parent=""><input name="_token" type="hidden" value="bNerzC2vzSNt3GxkvBF7E147Hwil16F6chKqomxK">
+<div class="form-group">
+    <div class="col-md-4">
+        <div class="form-group">
+            <input class="form-control" placeholder="Nombre" name="author_name" type="text" value="">
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <input class="form-control" placeholder="E-mail" name="author_email" type="email" value="">
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <input class="form-control" placeholder="Sitio web" name="author_url" type="text" value="">
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <textarea class="form-control" rows="6" id="message" name="body" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <input class="btn btn-round btn-g" type="submit" value="Publicar comentario">
+    </div>
+</div>
+</form>
+    </div>
+</div>
+<!-- /COMMENT FORM -->
+
+<div class="comments comments-container">
+    <h4 class="comment-title font-alt">50 comentarios</h4>
+    <hr class="divider m-b-30">
+
+    <div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/8152a264cd6fb322fa4a42acdc87f8d9" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-13568" name="comentario-13568">franco</a>
+            <span class="comment-date">
+                · Hace 8 días
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                hola quisiera saber como hacerlo para enviar dos datos generados por un sensor a la base de datos, e intentado pero no e logrado llegar a la solución.
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="13568">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="13568" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="13568"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/2347129a39d19fe17db12df951a9c43f" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-13556" name="comentario-13556">Carlos</a>
+            <span class="comment-date">
+                · Hace 17 días
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Buenas, nos gustaría saber si se puede subir a la base de datos desde la raspberry directamente, sin usar arduino, estamos haciendo un proyecto y queremos enviar los datos del sensor pir directamente a nuestra pagina web, sin utilizar arduino, nos podría ayudar?
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="13556">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="13556" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="13556"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/8067709f556b08b8a396ba7344e6ae42" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-13531" name="comentario-13531">Jose Alejandro</a>
+            <span class="comment-date">
+                · Hace 1 mes
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Buenas Ing.Pérez, primero quiero saludarte y agradecer el artículo, pero tengo dos consultas, la primera es sí es necesario que el arduino este conectado directamente a la compu, o puede tener una fuente externa y de igual manera va a enviar la información a la base de datos php. 
+La segunda es sí conoces alguna forma de enviar datos de arduino a un documento de Excel, o formato csv, o txt mediante ethernet, pero sin tener que usar un servidor web. 
+Saludos.
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="13531">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="13531" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="13531"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/94bf0e188ecb1d3c5a582d0587afaa25" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-13519" name="comentario-13519">Andres</a>
+            <span class="comment-date">
+                · Hace 1 mes
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Buenas tardes, he estado siguiendo este tutorial para hacer un envio de mi arduino ethernet a mi servidor información mediante un método GET, he creado una carpeta llamada guarda y la ip de mi servidor es 192.168.1.128.
+Si lanzo desde el navegador lo siguiente:
+http://192.168.1.128/guarda/iot.php?ganador=calle1&amp;tiempo=25&amp;dispositivo=01:02:03:04
+Si realiza bien la inserción en la BD, el problema es cuando lo intento desde el arduino, me sale que se conecta pero no inserta nada en la BD. El código que uso es:
+
+#include &lt;Ethernet.h&gt;
+#include &lt;SPI.h&gt;
+
+// Configuracion del Ethernet Shield
+byte mac[] = {0x90, 0xA2, 0xDA, 0x0F, 0xA3, 0x69}; // Direccion MAC
+byte ip[] = { 192,168,1,129 }; // Direccion IP del Arduino
+byte server[] = { 192,168,1,128 }; // Direccion IP del servidor
+EthernetClient client; 
+String ganador;
+String tiempo;
+String dispositivo;
+
+void setup(void) {
+  Ethernet.begin(mac, ip); // Inicializamos el Ethernet Shield
+  delay(1000); // Esperamos 1 segundo de cortesia
+  Serial.begin(9600);
+}
+
+void loop(void) {
+  ganador = "calle1";
+  tiempo = "23";
+ dispositivo ="01:01:02:03";
+  
+   
+  
+  // Proceso de envio de muestras al servidor
+  Serial.println("Connecting...");
+  if (client.connect(server, 80)&gt;0) {  // Conexion con el servidor
+   client.print("GET /guarda/iot.php?ganador="); // Enviamos los datos por GET
+    client.print(ganador);
+    client.print("&amp;tiempo=");
+    client.print(tiempo);
+    client.print("&amp;dispositivo=");
+    client.print(dispositivo);
+    client.println(" HTTP/1.0");
+    client.println("User-Agent: Arduino 1.0");
+    client.println();
+    Serial.println("Conectado");
+  } else {
+    Serial.println("Fallo en la conexion");
+  }
+  if (!client.connected()) {
+    Serial.println("Disconnected!");
+  }
+  client.stop();
+  client.flush();
+  delay(60000); // Espero un minuto antes de tomar otra muestra
+}
+
+En monitor serie me sale conectado, por lo que deduzco que entra dentro del if, pero no inserta nada en la BD.
+Por favor ayuda y gracias de antemano.
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="13519">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="13519" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="13519"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/2c4117f87fff4b2892e06f02ba6f4f91" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-13329" name="comentario-13329">Carlos</a>
+            <span class="comment-date">
+                · Hace 4 meses
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Como están? como hago para consultar un método que tengo en PHP, que me devuelve una respuesta de una consulta a BD?
+
+Gracias
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="13329">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="13329" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="13329"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/c6ec6befc0498b01f7204e801e75580e" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-13206" name="comentario-13206">Iñaki</a>
+            <span class="comment-date">
+                · Hace 5 meses
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Hola buenas, muy buen tutorial pero queria hacerle una consulta, tengo un problema al leer el dato de una variable por GET, este se guarda siempre como valor 4, que estoy haciendo mal? gracias de antemano 
+int id;
+String GETID = client.readStringUntil('\r');
+    Serial.println (GETID);
+    client.flush(); 
+    id = GETID.indexOf("/id=");
+    Serial.print (id);    
+    delay(10);
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="13206">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="13206" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="13206"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/9124913c83d6ec1b35126e5e42fba328" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-13165" name="comentario-13165">Roberto Gonzalez navarro</a>
+            <span class="comment-date">
+                · Hace 6 meses
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                hola mario y gracias por compartir tus conocimientos te comento que yo estoy intentando hacer algo parecido pero no he tenido buenos resultados me gustaría que me pudieras ayudar si es posible, yo tengo un sistema de sensores de temperatura a travez de RF que se comunican todos los equipos a una sola central todos estos equipos tienen su arduino nano y la central que recepciona los datos tambien es arduino nano pero quisiera interactuar a travez de internet por ejemplo traspasar los datos recepcionados del arduino nano master a la raspberry a travez del puerto usb y que esta raspberry me las suba a internet para poder sacar garficos de temperatuar de cada modulo que tengo y asi tener un control de estas temperaturas y tambien poder diseñar una pagina web que envie datos al arduino nano master y este recepcione los datos y transmita la informacion a travez de rf a quien corresponda espero que me pudieras ayudar a poder leer los datos que tengo en el puerto usb y poder subirlos a la red saludos cordiales.
+
+
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="13165">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="13165" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="13165"></div>
+    <div class="comment clearfix">
+        <div class="comment clearfix" data-parent="13165" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/e598d08c1f24cc1398e6cf2f578831e6" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-13173" name="comentario-13173">grauss</a>
+            <span class="comment-date">
+                · Hace 6 meses
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                tienes un tutorial para comunicar la rpi y el arduino a traves de usb... https://geekytheory.com/arduino-raspberry-pi-raspduino
+
+tambien este:
+https://geekytheory.com/arduino-raspberry-pi-lectura-de-datos
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="13173">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="13173" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="13173"></div>
+
+    </div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/c1e15094249135d1c32cfee644af385c" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-13152" name="comentario-13152">cabopo</a>
+            <span class="comment-date">
+                · Hace 6 meses
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                quiero hacer un sensor de temperaura usando arduino y enviar los datos obtenidos a amazon aws. alguien me puede asesorar. 
+
+gracias  
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="13152">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="13152" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="13152"></div>
+    <div class="comment clearfix">
+        <div class="comment clearfix" data-parent="13152" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/e598d08c1f24cc1398e6cf2f578831e6" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-13172" name="comentario-13172">grauss</a>
+            <span class="comment-date">
+                · Hace 6 meses
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                es esto mismo solo que a la hora de conectar con el servidor pones los datos de tu base de datos en aws,que tambien tiene acceso en mysql
+
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="13172">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="13172" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="13172"></div>
+
+    </div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/fed4ddef5d828af758d63f654fb0e368" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-12883" name="comentario-12883">David</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Hola, soy casi nuevo en Arduino, y me gustaría saber si los datos enviados al servidor son accesibles fuera de la red, es decir, si sustituyendo el shield Ethernet por un WiFi, se podría recibir datos en Android mediante una APP y estando conectado en otro punto de acceso o con redes 3G/HSPA+/4G
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="12883">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="12883" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="12883"></div>
+    <div class="comment clearfix">
+        <div class="comment clearfix" data-parent="12883" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/e598d08c1f24cc1398e6cf2f578831e6" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-13170" name="comentario-13170">grauss</a>
+            <span class="comment-date">
+                · Hace 6 meses
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                mientras tu arduino mande al servidor, tu luego lo sacas a internet y solo tienes que acceder a tu servidor a ver los datos, por red local o atraves de internet
+
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="13170">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="13170" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="13170"></div>
+<div class="comment clearfix" data-parent="12883" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/094368c517dc5e1747e9fc6bd2a20f57" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-13156" name="comentario-13156">Edgar</a>
+            <span class="comment-date">
+                · Hace 6 meses
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Hola David,
+
+La verdad es que eso que dices es muy complicado de hacer, más que nada por que el móvil nunca tiene una IP fija, por lo cual el Arduino intentaria enviar los datos pero no lo conseguiria, almenos que le informes cada vez que cambias de ip al arduino. 
+
+Consejo: Comprate una raspberry pi y instalar el servidor LAMP, yo lo he echo y no me arrepiento para nada o buscar una hosting gratuito.
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="13156">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="13156" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="13156"></div>
+
+    </div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/a8c9a654166b4301ec8d877ce80f758a" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-12801" name="comentario-12801">Suga Argüello</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Hola!!! muchas gracias por compartir!!!!
+Cómo podría guardar datos a phpmyadmin desde python????
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="12801">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="12801" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="12801"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/2d0fda25005b1ac90975fee73c03b777" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-12708" name="comentario-12708">Fernando Pacheco Huaman</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                gracias me ayudo mucho pero como seria de la forma viceversa recibir eventos de botones desde el servidor, es decir que cada vez que haga click en el boton me envie a hacer algunas acciones al cliente.
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="12708">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="12708" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="12708"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/2c4f03410ef83b2caf89da0e48dc9c1b" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-12674" name="comentario-12674">Mario Ernesto Basurto Medrano</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Una pregunta, como puedo leer un valor alojado en mi base de datos o bien en un archivo txt de mi servidor, sucede que al estar almacenando, cuando una condición se cumpla, requiero activar un led o un relay cuando el valor guardado en mi db o bien en un txt, sea 1
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="12674">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="12674" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="12674"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/c4476c76c7d3a2e7feda2d802e3fe159" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-12655" name="comentario-12655">David Dlgg</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Buenas, tengo una duda, hice lo del tutorial y funciono todo bien pero yo quisiera hacer que en vez de crear una nueva fila cada que guarda el dato , que lo vaya sobrescribiendo en la misma fila que le tengo asignada a cada usuario, así que cambie el INSERT INTO por un UPDATE pero ahora lo que hace es sobrescribir todas las filas. 
+
+Esto es lo que cambie al PHP:
+session_start();
+include ("conexion.php");
+$con=mysqli_connect($host,$user,$pass,$db);
+//leer valores por get
+$humedad = mysqli_real_escape_string($con, $_GET['humedad']);
+//insertar valores
+//$query = "INSERT INTO usuarios(humedad) VALUES('".$humedad."')";
+//sobrescribe valores
+$query = "UPDATE usuarios SET humedad='$humedad' WHERE usuario='$_SESSION[username]'";
+//ejecutamos la instruccion
+mysqli_query($con, $query);
+mysqli_close($con);
+
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="12655">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="12655" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="12655"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/3859f25f49865425b4f2373f946a4676" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-12615" name="comentario-12615">Tuxli</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Hola tengo una duda, necesito hacer la conexión desde arduino a raspberry usando el puerto usb y consola (no internet shield)  y enviar los datos a un servidor mysql que tengo ya listo en la raspberry.. alguna idea de como puedo hacer eso? tengo el codigo en arduino de los sensores ok, solo me falta poder enviarlo desde arduino o rescartarlo de alguna manera usando la raspberry...... se agradece !!!
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="12615">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="12615" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="12615"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/90288ad211534b60dfedefe429919031" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-12562" name="comentario-12562">Kelly Johanna Torres Navarro</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Hola, esta muy interesante el tutorial, pero te hago una pregunta, alguna idea de como hacerlo pero por wifi.
+Gracias.
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="12562">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="12562" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="12562"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/8e3e9f759fbaa0af422f119098d8ce75" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-12259" name="comentario-12259">Jose Hernandez Molina</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                hola me ha servido mucho tu tuto amigo gracias, pero tengo un problemita con arduino, no me está enviando los datos por GET, le ingreso la IP a arduino de  byte ip[] = {192,168,0,30};  como uso un servidor local , XAMPP, localhost le pongo el ip: byte server[] = {127,0,0,1};  que es el que indica el host , pero aun no logro enviar esos datos a mi  MYsql , ayudame a ver cual es mi error,
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="12259">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="12259" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="12259"></div>
+    <div class="comment clearfix">
+        <div class="comment clearfix" data-parent="12259" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/c38481b9d755d4d1e1d8faa3e5164e85" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-12726" name="comentario-12726">William Gil</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Ola amigo te mande un correo para que me ayudes y me digas como resolviste ese problema
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="12726">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="12726" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="12726"></div>
+<div class="comment clearfix" data-parent="12259" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/d5921a56285dd0b41e9405bc5a955beb" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-12553" name="comentario-12553">David Aguilar</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                hola amigo ya pudiste solucionar tu problema yo tengo el mismo inconveniente y no se como solucinarlo ayudame porfavor
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="12553">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="12553" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="12553"></div>
+    <div class="comment clearfix">
+        <div class="comment clearfix" data-parent="12553" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/8e3e9f759fbaa0af422f119098d8ce75" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-12554" name="comentario-12554">Jose Hernandez Molina</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Hola, claro te puedo ayudar, hablame a jose49_hz@hotmail.com
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="12554">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="12554" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="12554"></div>
+
+    </div>
+
+    </div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/8e3e9f759fbaa0af422f119098d8ce75" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-11569" name="comentario-11569">Jose Hernandez Molina</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Buen tutorial , pero te falto la parte de graficar los datos con HIghcharts, me ha servido muchisimo, te agradezco el tiempo
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="11569">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="11569" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="11569"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/b2c62b50742bbf133a2e7fa9ab1532e4" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-8745" name="comentario-8745">Matias Lahore</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Buenas, muy buena publicacion ! Vos a traves en este caso estas subiendo informacion a la base de datos, como deberia configurar para que en vez de escribir, vos puedas leer datos de la base de datos? Deberia cambiar mi archivo iot.php o el codigo en el arduino? o ambos? Agradezco mucho tu respuesta. Saludos
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="8745">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="8745" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="8745"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/150b5411ca284abea2930291e1b1fffc" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-8661" name="comentario-8661">BUSTAMANTEHB</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Buenas, saludos a todos los programadores de este prestigioso foro. Estoy en busca de información de como desde una pagina web externa montada en servidor local le pueda mandar un comando a un arduino ethernet shield para activar algún actuador, bien sea un simple led, activar un reled para encender un motor u otro periférico. Buso información y lo que consigo es que tengo que configurar mi ehernet shield como servidor y hacer la pagina web dentro del código arduioi y no lo quiero así porque quiero que el arduino este enviando información a una base de datos y que mi código php mediante la información que reciba almacenara en base de datos y me mostrara algún mensaje en el entorno gráfico (botones ) y luego yo tome decisiones de por ejemplo: si mi sensor infrarrojo detecto algo me avise en la pagina web con un botón que diga sensor 1 ON  y se dispare una alarma hasta que yo desde la pagina web mediante otro botón que diga sensor 1 OFF la mande a apagar pero que esta pagina web este totalmente fuera del código de arduino. les agradezco su ayuda.  
+
+Ya tengo una aplicación montada con sensores infrarrojos para detectar presencia o movimiento, también tengo conectado contactos magnéticos en las puertas y ventanas y cuando sucede un evento el ehternet shield manda a la base de datos información de la zona activada. yo accedo desde la pagina web en mi localhost pero hasta la base de datos, no puedo enviarle ordenes desde ella directamente al arduino . espero que me entiendas.
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="8661">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="8661" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="8661"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/e2657af47923dfcbc479c5ee7520ac70" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-8654" name="comentario-8654">Lucas</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Hola, quería saber si alguien ha probado con subir la información  a un servidor público, en ese caso tendría que poner la IP pública del servidor?
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="8654">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="8654" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="8654"></div>
+    <div class="comment clearfix">
+        <div class="comment clearfix" data-parent="8654" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/5d232ca0c8afa05f2cb2c3a6a237f4ee" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-8726" name="comentario-8726">Yesid</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Buen dia, puedes colocar el dominio asociado ala direccion ip que tienes el servidor, recuerda asignar los permisos nesesarios para recibir los datos.
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="8726">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="8726" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="8726"></div>
+
+    </div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/d761c16d66ac0a75ff5f401f0e7427d4" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-8597" name="comentario-8597">Jesús Zanelli Drago</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                hola: sin duda uno de los mejores tutoriales, me ayudó casi al 99%, sin embargo ahora tengo 2 dudas con una mejora del sistema:
+
+1. con un arduino y una shield ethernet puedo insertar directamente los datos a la base de datos (conectarme directamente a la base de datos) o solo usando php?
+
+2. he visto que hay pequeño módulos wifi Esp8266 (no son los grandes que están 50 dólares sino unos de 2-4-dólares) para arduino, en internet hay muchos tutoriales en donde mediante ellos los conectas a tu router e ingresando a la ip que se asigna al arduino puedes ver los datos de los sensores incorporados, es decir, conviertes al arduino en un pequeño servidor. Sin embargo, a mí me gustaría hacer lo que tú haces en este tutorial con dicho módulo wifi pero por ningún lado veo que alguien haya hecho eso: usar un módulo wifi para insertar datos a una base de datos en la misma red local, podrías darme alguna guía o dónde debería buscar la solución?
+
+3. ya que te consulto quería preguntarte si sabes cuál es la distancia máxima que puede tener un cable desde un arduino a un sensor? yo quiero conectar  8 sensores de humedad de tierra a un arduino pero dichos sensores estarán puestos a lo largo y ancho de un terreno. sin necesidad comprar un cable grande e ir probando, se puede saber hasta qué distancia podré captar los datos de dicho sensor? o hay que usar algún potenciador de señal (algo así como los plc de red)? si es así podrías detallarme algo de ello (estudio ing. de sistemas y la electrónica me cuesta)?
+
+gracias.
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="8597">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="8597" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="8597"></div>
+    <div class="comment clearfix">
+        <div class="comment clearfix" data-parent="8597" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/88531018281c0d543894d7858335898e" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-12622" name="comentario-12622">Alan Cortés</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Que tal Jesús, quiero saber si lograste resolver lo del módulo esp8266, estoy con el misma interrogante.
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="12622">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="12622" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="12622"></div>
+
+    </div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/66b8749f9834dd737e3479a6b6b2d438" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-8584" name="comentario-8584">Diego Herrera</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                cual es tu localhost que pones?
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="8584">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="8584" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="8584"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/f5eea89d7f1fb4eb986adeb1f2547d3b" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-8412" name="comentario-8412">Pedro</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Me gustaría saber cómo se hace este proyecto (almacenar la información de un sensor en una base de datos) usando el Arduino Yun
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="8412">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="8412" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="8412"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/c14cc259e9c225c78245b2942b2c893d" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-8411" name="comentario-8411">Jose mendoza</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                si quisisera cachar el "Valor" , pero en lugar de ser por ethernet, fuera por puerto serial como seria el enlace con mi formulario, porque veo que aqui se hace mediante direccion ip, pero es diferente a cuando lo conecto por medio de mi cable de datos usb, disculpen la pregunta , soy nuevo en esta materia.
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="8411">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="8411" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="8411"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/e42badfaa62bd9546f4ebece687abf60" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-8160" name="comentario-8160">Luis Loachamin</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Simplemente exelente informacion, les dire que estoy trabajando en un proyecto de control de accesos y me ayudo mucha esta informacion , utilizando la misma en conjunto con la del link 
+https://geekytheory.com/tutorial-raspberry-pi-15-instalacion-de-apache-mysql-php/
+y tambien este otro link
+https://geekytheory.com/java-php-mysql-i-introduccion/
+les sera de mucha utilidad.
+A nivel de servidores, los mismo pueden instalarse en Raspberry PI, locales o externos, el requerimiento primordial es tener en un servidor instalado, PHP5, MySQL, PhpMyadmin y MysqlClient, porque el principio de programacion es el mismo.
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="8160">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="8160" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="8160"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/648ef8993543a20371ec7d2b9871d46f" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-8107" name="comentario-8107">Rodolfo Delgado</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                tengo el siguienrte error....
+Notice:  Undefined index: valor in C:xampphtdocsiot.php on line 6
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="8107">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="8107" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="8107"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/7120fd509b028aaa89dc8cb6ac04b8d9" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-8078" name="comentario-8078">Nico 88008</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                No logro hacer la connexion al servidor. Siempre le sale el mensaje "fallo en la conexion". El servidor esta en red local con el arduino, e incluso si envio GET desde otro ordenador si funciona. Que puede suceder??
+
+Tengo duda tambien sobre cual es la forma correcta de la direcion mac. Depues de la x anado cada parte de la direccion?? asi = 
+
+byte mac[] = {0x90, 0xA2, 0xDA, 0xFB, 0x0A, 0x92}; 
+// Direccion MAC original = 90:A2:DA:FB:0A:92
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="8078">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="8078" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="8078"></div>
+    <div class="comment clearfix">
+        <div class="comment clearfix" data-parent="8078" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/5d232ca0c8afa05f2cb2c3a6a237f4ee" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-8725" name="comentario-8725">Yesid</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Buen dia,
+
+byte mac[] = { 0xB8, 0x27, 0xEB, 0x18, 0x2A, 0x3F };
+
+ten cuidado con los espacios ya que al compilar el programa lanza error.
+
+https://www.arduino.cc/en/Reference/EthernetBegin
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="8725">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="8725" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="8725"></div>
+<div class="comment clearfix" data-parent="8078" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/2fe39753761ab19ea2f5160311ab28cf" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-8134" name="comentario-8134">Tiff</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                recuerda que esa mac es la que le estas dando tu al ethernet, si no la trae impresa el ethernet puedes usar cualquiera, siempre y cuando no coincidan con las otras mac de tus dispositivos, yo uso esta byte mac[] = {  0xDE, 0xAD, 0xBE, 0xEF, 0xFF, 0xEE }; prueba esta a ver si te sirve...
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="8134">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="8134" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="8134"></div>
+
+    </div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/1174868bd2b9783a0262555a82c48022" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-8062" name="comentario-8062">JRs</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Estoy usando wampserver como red local, hago todo lo que dice el tutorial y el ethernet shield no me envia nada a la base de datos mysql del wampserver... ¿Que estare haciendo mal? necesito configurarle algo aicional al wampserver?
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="8062">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="8062" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="8062"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/572836ae380fd49c9f98e7d1019f5693" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-7956" name="comentario-7956">Mario</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Hola Geeks, Soy nuevo en foros y casi en programacion en android, mi pregunta esta relaccionada con este tema debido a que quiero hacer una conexion a mysql a traves de archivo php al que me conecto desde mi aplicacion android y quiero mandar los datos directamente segun los voy recibiendo en mi aplicacion android. (asi directamente, conectarme a esa pagina php y mandar todo segun lo recibo en mi aplicacion, mi aplicacion ya recibe la informacion y la transforma  a Strings). Muchas gracias por vuestra ayuda.
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="7956">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="7956" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="7956"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/6207881389ff71474da3d1c8149ea1da" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-7395" name="comentario-7395">Cesar</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Buenos dias, tengo un problema ya que no me mete los datos el arduino en la base de datos, el problema creo que esta en que mi basee de datos se encuentra en el servidor localhost 127.0.0.1, y este no lo puedo abrir con la direccion IP del ordenador donde lo tengo, por lo que luego la direccion que le doy al arduino no se puede conectar.
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="7395">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="7395" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="7395"></div>
+    <div class="comment clearfix">
+        <div class="comment clearfix" data-parent="7395" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/2fe39753761ab19ea2f5160311ab28cf" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-8058" name="comentario-8058">tiffany</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                tienen que configurar wampserver como red local!!!!
+Aun estoy haciendo pruebas, espero nos podamos ayudar
+salidos
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="8058">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="8058" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="8058"></div>
+<div class="comment clearfix" data-parent="7395" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/9c1ac278f1d527abdb8a404042e8a789" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-7592" name="comentario-7592">Emmanuel Alejandro Portugal Mu</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                ya lo solucionaste?
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="7592">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="7592" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="7592"></div>
+    <div class="comment clearfix">
+        <div class="comment clearfix" data-parent="7592" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/6207881389ff71474da3d1c8149ea1da" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-7597" name="comentario-7597">Cesar</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                no
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="7597">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="7597" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="7597"></div>
+
+    </div>
+
+    </div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/32edd1f7b97c7e888edf62bcd3cc4df4" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-7262" name="comentario-7262">Armando RAmos</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                como puedo enviar dos variables en el mismo GET? por ejemplo mandar temperatura, Ph. ambas variables con un valor
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="7262">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="7262" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="7262"></div>
+    <div class="comment clearfix">
+        <div class="comment clearfix" data-parent="7262" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/e3e7a89f58c9e77a15611bfe7d33c101" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-7322" name="comentario-7322">Unai Garcia</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Buenas, para enviar mas de un parámetro por GET seria concatenando las "variables=valor" con "&amp;".
+
+La cadena final tendría que ser algo así: "/tutoiot/iot.php?temp=valorTemperatura&amp;ph=valorPH..."
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="7322">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="7322" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="7322"></div>
+
+    </div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/aa5e278ec5bef9254171c2e23a4f943a" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-7198" name="comentario-7198">Jorge Guzman Carrera</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Muy bueno, solo una duda... ¿porque no usar el GPIO y python de la RPi?.
+claro además de un sensor de temperatura digital.
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="7198">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="7198" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="7198"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/36306d0c6b1d7180a7ad2f4d03030a25" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-7155" name="comentario-7155">Oscar Ruiz Gallardo</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                una pregunta, que es la dirección ip del arduino y como la puedo saber?
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="7155">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="7155" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="7155"></div>
+    <div class="comment clearfix">
+        <div class="comment clearfix" data-parent="7155" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/5d232ca0c8afa05f2cb2c3a6a237f4ee" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-8724" name="comentario-8724">Yesid</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Buen dia, la Dir IP del arduino se la tienes que colocar... si vas a utilizarla tambien no se te olvide anexar la libreria para Ethernet.
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="8724">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="8724" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="8724"></div>
+
+    </div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/bb9cac5fd0785763594cbfd37488bfb9" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-6705" name="comentario-6705">stanleyatala</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Hola.
+
+Tengo un Servidor montado con un BeagleBone Black y un sensor (Arduino Ethernet) que toma los datos de Humedad, Temperatura, Gas en Ambiente y Humedad.
+Esta información la deposito en un una DB MySQL en el BBB y he creado un par de scripts para ver el log via ssh, enviar notificaciones via whatsapp, encender un extractor de aire, prender un Aire acondicionado, y otras cosillas, en base al valor tomado por el Sensor.
+
+Estoy "jugueteando" con unos xbee, para desplegar otros sensores en mi casa wireless, para que introduzcan datos a la misma DB.
+Quisiera poder graficar la información de las variables que estoy midiendo y depositando en la DB con HighCharts; pero no tengo muchos conocimientos de programación Web :-( .
+
+
+La tercera parte de este tutorial, seguro me va a ser de gran ayuda.
+Cuando lo publicaran?
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="6705">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="6705" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="6705"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/c29ae224441c20ad097c261b1ca7ccb8" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-6594" name="comentario-6594">Mikel</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Buenos dias! Me busca justo esto, pero mi proyecto se va a hacer con una shield wifi y la base de datos la tengo en un hosting gratuito y no consigo que me conecte al servidor. Me prodrias ayudar? Muchas gracias
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="6594">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="6594" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="6594"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/6f998051141365c8df70e3c97a7f5910" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-6533" name="comentario-6533">Edge</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Buena info...pero y la tercera parte del tuto?....saludos...
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="6533">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="6533" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="6533"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/4174f5c8e5dd0b0528a54c227a727c4a" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-6505" name="comentario-6505">Davio</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Hola, este tutorial contiene mucha información muy buena y de antemano los felicito, pero de la misma manera desearía que me aclaran una duda si en la comprobación del paso 2 en la tabla de servidor no tenemos ningún cambio como solucionarlo?
+de antemano gracias
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="6505">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="6505" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="6505"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/bb24f1368a7aeef277be28a943e50f48" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-6446" name="comentario-6446">cristian</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                tiene q ser obligatorio un servidor?? o puedo colocar mi base de datos en mi pc y conectarlo a traves d mi ip??
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="6446">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="6446" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="6446"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/644be1d67de1d257884ee295b7f7f494" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-6298" name="comentario-6298">Rafa</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Perdonar, no puedo mandar el codigo PHP, el formulario me lo borra..........
+
+if (envio)
+
+               {
+client.println("php"); // Modificado para envio
+client.println("$conexion = mysql_connect('192.168.0.100','rafa','1234');");
+client.println("mysql_select_db('miBD');");
+client.print("mysql_query("INSERT INTO miTB (maquina) VALUES (");
+client.print(CG);
+client.println(")");");
+client.println(""); Modificado para envio 
+envio=false;
+
+                }
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="6298">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="6298" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="6298"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/644be1d67de1d257884ee295b7f7f494" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-6297" name="comentario-6297">Rafeta</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Perdon que se me ha quedado medio codigo por el camino........
+
+if (envio)
+{
+"client.println("");"
+"envio=false;"
+}
+
+
+
+Perdon
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="6297">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="6297" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="6297"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/644be1d67de1d257884ee295b7f7f494" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-6296" name="comentario-6296">Rafeta</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Enhorabueba por el articulo. Queria realizar una consulta. 
+
+
+ client.println("HTTP/1.1 200 OK"); 
+
+client.println("Content-Type: text/html");
+client.println();
+//Página web en formato HTML
+client.println("");
+client.println("");
+client.println("");
+client.println("");
+client.println("");                      
+client.print("Maquina:-");
+client.println(CG);            
+if (envio)
+       {
+       client.println("");
+       envio=false;
+       }
+client.println("&lt;b&gt;");
+client.println("");
+
+
+
+EXPLICACION: Cuando se activa una entrada la variable CG recoge qué entrada es y tambien activa la variable 'envio'. A la hora de mandar el html comprueba 'envio' y añade el codigo PHP para hacer la insercion de la variable CG en la BD miBD, en la tabla mi TB. 
+
+
+Tengo el XAMPP instalado, la BD, el usuario y todo pero no actualiza la tabla.............¿Alguna idea?
+Gracias por tu tiempo
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="6296">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="6296" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="6296"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/d488c187780cc2739ea1efc878ee8bd2" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-6117" name="comentario-6117">Dani</a>
+            <span class="comment-date">
+                · Hace 2 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Hola,
+He realizado todo lo que indica el manual, y funciona perfectamente. De echo, mis felicitaciones por tan magnifico trabajo, pero hay una cosa que me ocurre de vez en cuando.
+Se trata, de que tomo muestras cada 5 segundos y las envio por  get al servidor local. Esto funciona, ya que aparece en la tabla de phpmyadmin, pero cuando lleva lo mismo unas 2 horas funcionando, la base de datos deja de guardar datos. He probado también, con un servidor remoto, y me pasa lo mismo.
+Funciona unas horas, incluso ha llegado ha funcionar varios días, pero en un momento dado, se dejan de guardar los datos.
+¿Qué puede ocurrir?,  ¿Se está saturando la base de datos con la orden GET?, ¿Es problema del Arduino?
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="6117">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="6117" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="6117"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/3457106321c33af54e0a95b3a1282cfe" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-5852" name="comentario-5852">Emmanuel</a>
+            <span class="comment-date">
+                · Hace 3 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Excelente tuto mario se agradece mucho el aporte, solo una duda que no consigo implementar como puedo introducir mas valores a traves de mysqli_real_escape_string ???
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="5852">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="5852" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="5852"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/7842747226ef46471cdbb6fb81ecac20" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-5264" name="comentario-5264">kuku</a>
+            <span class="comment-date">
+                · Hace 3 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                He conseguido hacer en 3 días algo que jamás pensé que sería capaz. Muchas gracias por el tutorial y seguid así!
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="5264">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="5264" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="5264"></div>
+    <div class="comment clearfix">
+        <div class="comment clearfix" data-parent="5264" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/fff4788073b07b6488367b3d1d7ba89f" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-5278" name="comentario-5278">Mario Pérez Esteso</a>
+            <span class="comment-date">
+                · Hace 3 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Muchas gracias por tu comentario. Me alegro de que te haya servido de ayuda. Un saludo :)
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="5278">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="5278" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="5278"></div>
+
+    </div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/8946f9abafc19314101c0b6ab059d3aa" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-5250" name="comentario-5250">CARLOS</a>
+            <span class="comment-date">
+                · Hace 3 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Excelente aporte amigo en verdad muchas gracias y felicitaciones
+
+Tengo algunas consultas...
+
+1. Como seria la programación para el arduino si utilizar el shield ethernet, porque lo estoy utilizando directamente desde mi Raspberry. Es posible hacer esto??
+
+2. Tengo problemas con la programacion del servido, no puedo insertar el valor como lo sugieres, al momento de ingresar me sale este error
+
+Not Found
+
+The requested URL /tutoito/iot.php was not found on this server.
+
+Apache/2.2.22 (Debian) Server at 192.168.2.14 Port 80
+
+esto lo estoy probando desde mi raspberry , la cual tiene la dirección ip 192.168.2.14
+
+Por favor ayúdame 
+
+Gracias Saludos
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="5250">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="5250" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="5250"></div>
+    <div class="comment clearfix">
+        <div class="comment clearfix" data-parent="5250" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/a26e12008bf4c5194891a37a8ffd3b08" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-12668" name="comentario-12668">Daniel Chavez</a>
+            <span class="comment-date">
+                · Hace 1 año
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Oye amigo como solucionaste el  punto numero 2, el error que tenias , en que carpeta de la raspberry  metiste  los archivos  ?
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="12668">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="12668" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="12668"></div>
+<div class="comment clearfix" data-parent="5250" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/fff4788073b07b6488367b3d1d7ba89f" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-5263" name="comentario-5263">Mario Pérez Esteso</a>
+            <span class="comment-date">
+                · Hace 3 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Hola Carlos. La lectura de los datos con Raspberry Pi sería totalmente diferente. Este tutorial tiene un cliente (Arduino) y un servidor (Raspberry Pi). Con lo que tú planteas no haría falta ni PHP, porque lo harías directamente desde Python, por ejemplo. En cuanto a la segunda etiqueta, como digo en el artículo: 
+
+&lt;blockquote&gt;Voy a crear una carpeta dentro de mi servidor que se va a llamar tutoiot (tutorial Internet de las Cosas) y, dentro crearé dos archivos: config.php y iot.php.&lt;/blockquote&gt;
+
+Saludos.
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="5263">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="5263" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="5263"></div>
+    <div class="comment clearfix">
+        <div class="comment clearfix" data-parent="5263" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/106d7af409a4c13dc22d631f5f48f7a7" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-5957" name="comentario-5957">Alex Mora</a>
+            <span class="comment-date">
+                · Hace 3 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Estoy haciendo un proyecto que obtiene lecturas de diferentes sensores, me gustaría saber si puedes echarme una mano, el escenario es este:
+
+Una raspberry pi funciona como servidor web, tiene conectado el arduino por usb, tengo mi servidor funcionando y mi base de datos, ahora mismo tengo el programa corriendo en el arduino entregandome dos valores (deberían ser 6 pero por el momento estoy manejando dos sensores, Temperatura y Distancia.
+
+este es el código de mi arduino
+
+// :) aquí empieza
+
+float sensePin =0;
+
+long distancia;
+
+long tiempo;
+
+void setup(){
+
+ analogReference(DEFAULT); 
+
+ Serial.begin(9600); 
+
+ pinMode(9, OUTPUT); /*activación del pin 9 como salida: para el pulso ultrasónico*/
+
+ pinMode(8, INPUT); /*activación del pin 8 como entrada: tiempo del rebote del ultrasonido*/
+
+}
+
+void loop(){
+
+   digitalWrite(9,LOW); /* Por cuestión de estabilización del sensor*/
+
+  delayMicroseconds(5);
+
+  digitalWrite(9, HIGH); /* envío del pulso ultrasónico*/
+
+  delayMicroseconds(10);
+
+  tiempo=pulseIn(8, HIGH); /* Función para medir la longitud del pulso entrante. Mide el tiempo que transcurrido entre el envío
+
+  del pulso ultrasónico y cuando el sensor recibe el rebote, es decir: desde que el pin 12 empieza a recibir el rebote, HIGH, hasta que
+
+  deja de hacerlo, LOW, la longitud del pulso entrante*/
+
+  distancia= int(0.014*tiempo); /*fórmula para calcular la distancia obteniendo un valor entero*/
+
+  /*Monitorización en centímetros por el monitor serial*/
+
+  
+
+  float val = analogRead(sensePin);   //read probe output
+
+  /*Serial.println("val");
+
+  Serial.println(val);   //print this to screen (for debugging only)
+
+  */
+
+  float temp = map(val, 0.0, 1023.0, 0.0, 225.0); //convert from analog read numbers to temp
+
+  Serial.println(temp);   //print temp to screen
+
+  Serial.println(distancia);
+
+   
+
+  
+
+  delay(500);  //wait half a second before repeating
+
+}
+// aquí acaba
+
+me entrega los valores con un salto de linea
+
+hasta el momento tengo un python que lee los valores del serial
+
+es este:
+
+# aqui empieza 
+
+#!/usr/bin/python
+
+# Importamos la libreira de PySerial
+
+import serial
+
+# Abrimos el puerto del arduino a 9600
+
+PuertoSerie = serial.Serial('/dev/ttyACM0', 9600)
+
+# Creamos un buble sin fin
+
+while True:
+
+  # leemos hasta que encontarmos el final de linea
+
+  sArduino = PuertoSerie.readline()
+
+  # Mostramos el valor leido y eliminamos el salto de linea del final
+
+  print sArduino.rstrip('n')
+
+#aqui termina
+
+ahora, mi problema es que quiero meterlo a una base de datos, esta base de datos tiene un campo time_stamp, y leer la base de datos no es problema, la onda es que no sé como pasar los datos leidos por el python a mi base de datos mysql
+
+Cabe mencionar que la mayor parte de mi progreso a sido gracias a ti justamente, así que de cualquier forma gracias!
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="5957">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="5957" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="5957"></div>
+
+    </div>
+
+    </div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/8a8bc9bbe4e0224d35846371c6954979" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-5114" name="comentario-5114">Claudio Peña Hernandez</a>
+            <span class="comment-date">
+                · Hace 3 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Hola amigo, disculpa como hiciste para sacar la hora, gracias
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="5114">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="5114" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="5114"></div>
+    <div class="comment clearfix">
+        <div class="comment clearfix" data-parent="5114" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/fff4788073b07b6488367b3d1d7ba89f" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-5115" name="comentario-5115">Mario Pérez Esteso</a>
+            <span class="comment-date">
+                · Hace 3 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Hola Claudio. Si te fijas, en la creación de la base de datos, el campo tiempo está por defecto a CURRENT_TIMESTAMP. Quiere decir que coge la hora actual.
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="5115">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="5115" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="5115"></div>
+
+    </div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/e5c24d1a5d8cf6a5a9160ab5a55b127a" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-4993" name="comentario-4993">saul eduardo</a>
+            <span class="comment-date">
+                · Hace 3 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                no entiendo como debo de dirigir mi pagina para que el get tome el valor de la variable
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="4993">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="4993" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="4993"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/8a8bc9bbe4e0224d35846371c6954979" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-4727" name="comentario-4727">Claudio Peña Hernandez</a>
+            <span class="comment-date">
+                · Hace 3 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                Hola amigo, ¿podría desde una base de datos enviar datos a mi arduino? Con que base de datos y con que shield
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="4727">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="4727" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="4727"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/7226a2f57bdaf6bd31b25a32d15b8636" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-4677" name="comentario-4677">zito zitonguito</a>
+            <span class="comment-date">
+                · Hace 3 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                extraordinario
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="4677">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="4677" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="4677"></div>
+<div class="comment clearfix" data-parent="" xmlns="http://www.w3.org/1999/html">
+    <div class="comment-avatar">
+        <img src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/d41d8cd98f00b204e9800998ecf8427e" alt="">
+    </div>
+    <div class="comment-content clearfix">
+        <h5 class="comment-author font-alt">
+            <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#comentario-4666" name="comentario-4666">Internet de las cosas [Parte 2] – Subir datos a una base de datosMi Arduino | Mi Arduino</a>
+            <span class="comment-date">
+                · Hace 3 años
+            </span>
+        </h5>
+        <div class="comment-body">
+            <p>
+                […] By Mario Pérez […]
+            </p>
+        </div>
+        <div class="reply-container">
+            <div class="comment-meta font-alt">
+                <a href="https://geekytheory.com/internet-de-las-cosas-parte-2-subir-los-datos-a-una-base-de-datos#" class="reply-comment-button" data-in-reply-to="4666">
+                    Responder
+                </a>
+            </div>
+            <div data-in-reply-to="4666" class="reply-comment-form"></div>
+        </div>
+    </div>
+</div>
+<div class="comment clearfix comment-reply-container" data-comment="4666"></div>
+
+
+</div>
+                </div>
+            </div>
+            </div>
+</section>
+<!-- FOOTER -->
+<footer class="module bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="social-text-links font-alt text-center m-b-20">
+                                                                        <li>
+                                <a href="https://twitter.com/geekytheory">Twitter</a>
+                            </li>
+                                                                                                                                            <li>
+                                <a href="https://facebook.com/geekytheory">Facebook</a>
+                            </li>
+                                                                                                                                            <li>
+                                <a href="https://github.com/geekytheory">Github</a>
+                            </li>
+                                                                                                                                                                                        <li>
+                                <a href="https://plus.google.com/101433674168165160446/">Google Plus</a>
+                            </li>
+                                                                                                                                                                                                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="copyright text-center m-b-0">Hecho con <i style="color:#E26A6A;" class="fa fa-heart"></i> por <a href="http://geekytheory.com/">Geeky Theory</a></p>
+                <p class="copyright text-center m-t-30">
+                    <a href="https://goo.gl/OpjL44">
+                        <i class="fa fa-github"></i> Somos open source
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer><!-- /FOOTER -->
+
+</div>
+<!-- /WRAPPER -->
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Javascript files -->
+<iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" style="display: none;" src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/saved_resource(2).html"></iframe><script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/jquery-2.1.3.min.js.descarga"></script>
+<script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/bootstrap.min.js.descarga"></script>
+<script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/jquery.superslides.min.js.descarga"></script>
+<script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/jquery.mb.YTPlayer.min.js.descarga"></script>
+<script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/jquery.magnific-popup.min.js.descarga"></script>
+<script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/owl.carousel.min.js.descarga"></script>
+<script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/jquery.simple-text-rotator.min.js.descarga"></script>
+<script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/imagesloaded.pkgd.min.js.descarga"></script>
+<script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/isotope.pkgd.min.js.descarga"></script>
+<script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/packery-mode.pkgd.min.js.descarga"></script>
+<script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/appear.min.js.descarga"></script>
+<script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/jquery.easing.1.3.min.js.descarga"></script>
+<script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/wow.min.js.descarga"></script>
+<script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/jqBootstrapValidation.min.js.descarga"></script>
+<script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/jquery.fitvids.min.js.descarga"></script>
+<script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/jquery.parallax-1.1.3.min.js.descarga"></script>
+<script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/smoothscroll.min.js.descarga"></script>
+<script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/custom.min.js.descarga"></script>
+
+    <script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/comments.min.js.descarga"></script>
+
+    <script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/social-share.min.js.descarga"></script>
+
+    <script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/photoswipe.min.js.descarga"></script>
+
+    <script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/photoswipe-ui-default.min.js.descarga"></script>
+
+    <script src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/app.js.descarga"></script>
+
+
+
+<iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" style="display: none;" src="./INTERNET DE LAS COSAS [PARTE 2] – SUBIR LOS DATOS A UNA BASE DE DATOS_files/saved_resource(3).html"></iframe></body></html>

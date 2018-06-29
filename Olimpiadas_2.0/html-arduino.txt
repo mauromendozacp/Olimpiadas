@@ -1,0 +1,11 @@
+client.print("<head><title>ARDUINO - 2017 6CP1</title></head>");
+                      client.print("<body><h1 id=titulo>ARDUINO - 6CP1</h1><p>Temperatura:  ");
+                      client.print(temperatura);     // Aqui va la temperatura
+                      client.print(" grados Celsius</p>");
+                      client.print("<p>Humedad:  ");
+                      client.print(humedad);    // Aqui va la humedad
+                      client.print(" %</p>");
+                      client.print("<p>Gas:  ");
+                      client.print(sensor_gas);    // Aqui va el gas
+                      client.print(" </p>");
+                      client.print("<p><em> La pagina se actualiza cada 5 segundos.</em></p></body></html>");
